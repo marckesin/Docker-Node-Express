@@ -4,7 +4,8 @@
   "description": "Docker image com backend em Node.JS/Express.JS",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/marckesin/Docker-Node-Express#readme",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "snyk": "^1.853.0"
   }
 }

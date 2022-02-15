@@ -1,4 +1,4 @@
-FROM node:lts as runner
+FROM node:16.14-bullseye-slim as runner
 WORKDIR /node-express
 ENV NODE_ENV production
 ARG COMMIT_ID
