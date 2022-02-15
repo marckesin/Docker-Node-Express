@@ -43,4 +43,4 @@ jobs:
         uses: koyeb-community/koyeb-actions@v2
         with:
           api_token: "${{ secrets.KOYEB_TOKEN }}"
-      - run: koyeb services redeploy docker-node-express/docker-node-express
+      - run: koyeb services redeploy docker-node-express/main
