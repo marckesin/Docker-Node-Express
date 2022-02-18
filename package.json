@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/marckesin/Docker-Node-Express#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "helmet": "^5.0.2"
   },
   "devDependencies": {
     "snyk": "^1.853.0"

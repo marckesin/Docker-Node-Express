@@ -1,8 +1,11 @@
 const express = require("express");
+const helmet = require("helmet");
 
 const port = process.env.PORT || 3000;
 
 const app = express();
+
+app.use(helmet.hidePoweredBy());
 
 app.get("/", (req, res) => {
   res.json({
@@ -11,6 +14,4 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
-});
+app.listen(port);
