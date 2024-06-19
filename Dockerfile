@@ -6,5 +6,5 @@ ENV COMMIT_ID=${COMMIT_ID}
 COPY . .
 RUN npm ci --only=production
 EXPOSE 3000
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
 LABEL org.opencontainers.image.source https://github.com/marckesin/docker-node-express
